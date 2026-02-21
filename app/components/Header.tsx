@@ -15,8 +15,8 @@ export default function Header() {
             src="/logo.png"
             alt="Hamdi Coffee Logo"
             width={200}
-            height={80}
-            className="h-10 sm:h-12 md:h-14 w-auto object-contain"
+            height={60}
+            className="h-16 sm:h-20 md:h-16 w-auto object-contain"
             priority
           />
         </Link>
@@ -64,7 +64,12 @@ export default function Header() {
           >
             Drinks
           </Link>
-       
+          <Link
+            href="/gallery"
+            className="text-black font-medium hover:text-amber-700 transition-colors duration-200 text-sm lg:text-base"
+          >
+            Gallery
+          </Link>
           <Link
             href="/location"
             className="text-black font-medium hover:text-amber-700 transition-colors duration-200 text-sm lg:text-base"
@@ -79,7 +84,7 @@ export default function Header() {
           </Link>
         
           <a href="/food" className="px-4 lg:px-6 py-2 lg:py-2.5 bg-linear-to-r from-amber-500 to-amber-600 text-white font-semibold rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all duration-300 transform hover:scale-105 shadow-lg text-sm lg:text-base whitespace-nowrap">
-            Shop Now
+            Order Online
           </a>
         </div>
       </nav>
@@ -130,8 +135,15 @@ export default function Header() {
             >
               Drinks
             </Link>
+            <Link
+              href="/gallery"
+              className="text-black font-medium hover:text-amber-700 transition-colors duration-200 py-2"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Gallery
+            </Link>
             <button className="w-full px-4 py-3 bg-linear-to-r from-amber-500 to-amber-600 text-white font-semibold rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all duration-300">
-              Shop Now
+              Order Online
             </button>
           </div>
         </div>

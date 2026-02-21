@@ -3,17 +3,17 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="bg-linear-to-b relative z-10 from-amber-50 via-amber-50 to-amber-100 py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 mb-6 sm:mb-8">
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-12 mb-6 sm:mb-8">
           {/* Brand Section */}
           <div>
             <div className="mb-3 sm:mb-4">
               <Image
                 src="/logo.png"
                 alt="Hamdi Coffee Logo"
-                width={150}
-                height={75}
-                className="h-auto w-32 sm:w-40 object-contain"
+                width={200}
+                height={100}
+                className="h-auto w-48 sm:w-56 md:w-64 object-contain"
               />
             </div>
           </div>
@@ -27,13 +27,20 @@ export default function Footer() {
                   <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   <path d="M22 6L12 13L2 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                <span className="break-all">kissmecoco@me.com</span>
+                <span className="break-all">bulqass@yahoo.com</span>
               </li>
               <li className="flex items-center gap-2 sm:gap-3">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-black sm:w-[18px] sm:h-[18px]">
                   <path d="M22 16.92V19.92C22 20.52 21.52 21 20.92 21C9.4 21 0 11.6 0 0.08C0 -0.52 0.48 -1 1.08 -1H4.08C4.68 -1 5.16 -0.52 5.16 0.08V3.08C5.16 3.68 4.68 4.16 4.08 4.16H2.08C2.08 8.28 5.72 11.92 9.84 11.92V9.92C9.84 9.32 10.32 8.84 10.92 8.84H13.92C14.52 8.84 15 9.32 15 9.92V12.92C15 13.52 14.52 14 13.92 14H10.92C10.32 14 9.84 13.52 9.84 12.92V11.92" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
-                <span>+1 (555) 123-4567</span>
+                <span>(612) 259-8411</span>
+              </li>
+              <li className="flex items-start gap-2 sm:gap-3">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-black sm:w-[18px] sm:h-[18px] mt-0.5">
+                  <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                <span className="text-xs sm:text-sm">2910 Pleasant Ave Fl 1<br />Minneapolis, MN 55408, US</span>
               </li>
             </ul>
           </div>
@@ -100,6 +107,42 @@ export default function Footer() {
                   </svg>
                 </div>
                 <a href="#" className="hover:text-amber-700 transition-colors duration-300">@hamdicoffee</a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Hours */}
+          <div>
+            <h4 className="font-bold text-black mb-3 sm:mb-4 text-sm sm:text-base">Hours</h4>
+            <ul className="space-y-1.5 sm:space-y-2 text-gray-800 text-xs sm:text-sm">
+          
+              <li className="flex justify-between">
+                <span className="font-semibold text-black">Sunday:</span>
+                <span>6:30 am - 11:00 pm</span>
+              </li>
+              <li className="flex justify-between">
+                <span className="font-semibold text-black">Monday:</span>
+                <span>6:30 am - 11:00 pm</span>
+              </li>
+              <li className="flex justify-between">
+                <span className="font-semibold text-black">Tuesday:</span>
+                <span>6:30 am - 10:30 pm</span>
+              </li>
+              <li className="flex justify-between">
+                <span className="font-semibold text-black">Wednesday:</span>
+                <span>6:30 am - 11:00 pm</span>
+              </li>
+              <li className="flex justify-between">
+                <span className="font-semibold text-black">Thursday:</span>
+                <span>6:30 am - 10:30 pm</span>
+              </li>
+              <li className="flex justify-between">
+                <span className="font-semibold text-black">Friday:</span>
+                <span>7:00 am - 11:00 pm</span>
+              </li>
+              <li className="flex justify-between">
+                <span className="font-semibold text-black">Saturday:</span>
+                <span>6:30 am - 11:00 pm</span>
               </li>
             </ul>
           </div>

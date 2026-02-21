@@ -1,13 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export default function Drinks() {
-  const [cart, setCart] = useState<{ [key: string]: number }>({});
-
   const drinkItems = [
     {
       id: "somali-shaah",
@@ -75,15 +72,6 @@ export default function Drinks() {
     },
   ];
 
-  const handleAddToCart = (itemId: string) => {
-    setCart((prevCart) => ({
-      ...prevCart,
-      [itemId]: (prevCart[itemId] || 0) + 1,
-    }));
-    // Show feedback
-    alert("Added to cart!");
-  };
-
   return (
     <div className="min-h-screen bg-linear-to-b from-amber-50 via-amber-50 to-amber-100 relative overflow-x-hidden">
       {/* Background Image */}
@@ -135,7 +123,7 @@ export default function Drinks() {
                   <p className="text-sm sm:text-base text-gray-700 leading-relaxed mb-4 grow">
                     {item.description}
                   </p>
-                  <div className="flex items-center justify-between mt-auto pt-4 border-t border-amber-200">
+                  <div className="flex items-center justify-between gap-3 mt-auto pt-4 border-t border-amber-200">
                     <span className="text-xl sm:text-2xl font-black text-amber-600">
                       ${item.price.toFixed(2)}{" "}
                       <span className="text-xs sm:text-sm font-semibold text-gray-700/80 line-through">
@@ -143,10 +131,9 @@ export default function Drinks() {
                       </span>
                     </span>
                     <button
-                      onClick={() => handleAddToCart(item.id)}
-                      className="px-4 sm:px-6 py-2 sm:py-3 bg-linear-to-r from-amber-500 to-amber-600 text-white font-semibold rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all duration-300 transform hover:scale-105 text-xs sm:text-sm"
+                      className="px-4 sm:px-6 py-2 sm:py-3 bg-linear-to-r from-amber-500 to-amber-600 text-white font-semibold rounded-lg hover:from-amber-600 hover:to-amber-700 transition-all duration-300 transform hover:scale-105 text-xs sm:text-sm whitespace-nowrap"
                     >
-                      Add to Cart
+                      Order Online
                     </button>
                   </div>
                 </div>

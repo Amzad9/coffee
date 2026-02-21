@@ -13,7 +13,7 @@ interface TestimonialsProps {
 
 export default function Testimonials({ testimonials }: TestimonialsProps) {
   return (
-    <section className="bg-linear-to-b from-amber-50 via-amber-50 to-amber-100 py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <section className="bg-linear-to-b from-amber-50 via-amber-50 to-amber-100 py-12 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
       {/* Decorative Leaves */}
       <div className="absolute left-0 bottom-0 translate-x-[-10px] sm:translate-x-[-20px] translate-y-[10px] sm:translate-y-[20px] opacity-30 sm:opacity-40 blur-sm">
         <svg width="40" height="50" viewBox="0 0 80 100" className="w-10 h-12 sm:w-16 sm:h-20 lg:w-20 lg:h-24">

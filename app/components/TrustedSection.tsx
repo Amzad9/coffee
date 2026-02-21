@@ -2,8 +2,8 @@ export default function TrustedSection() {
   return (
     <section className="bg-linear-to-b from-amber-50 to-amber-100 py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="bg-white/10 rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 xl:p-12 border border-amber-100/0">
-          <h2 className="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-black uppercase tracking-wide mb-6 sm:mb-8 lg:mb-12">
+        <div className="bg-white/10 rounded-xl sm:rounded-2xl  border border-amber-100/0">
+          <h2 className="text-center text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-black text-black uppercase tracking-wide mb-4">
             TRUSTED BY TEA LOVERS
           </h2>
 

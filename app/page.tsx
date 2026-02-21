@@ -5,13 +5,15 @@ import Hero from "./components/Hero";
 import TrustedSection from "./components/TrustedSection";
 import Testimonials from "./components/Testimonials";
 import ExoticDelights from "./components/ExoticDelights";
+import VideoSection from "./components/VideoSection";
+import Reviews from "./components/Reviews";
 import CTASection from "./components/CTASection";
 import Footer from "./components/Footer";
 
 export default function Home() {
   const testimonials = [
     {
-      name: "Universal Auto Exports I.",
+      name: "Ahmed M.",
       source: "Google",
       quote:
         "Best Somali Shaah and Samosa's I've had in MN. Definitely a local hidden gem. Very affordable and quick service! Do yourself a favor and give them a try!",
@@ -25,7 +27,7 @@ export default function Home() {
       image: "/test2.png",
     },
     {
-      name: "Abdikafi I.",
+      name: "Amina H.",
       source: "Google",
       quote:
         "Maansha allah everything is amazing service food. I'm so happy and I'm glad to see everyone same way keep doing it. What are you doing? Thank you guys.",
@@ -38,8 +40,10 @@ export default function Home() {
       {/* <Header /> */}
       <Hero />
       <TrustedSection />
+      <VideoSection />
       <Testimonials testimonials={testimonials} />
       <ExoticDelights />
+      <Reviews />
       <CTASection />
       {/* <Footer /> */}
     </div>

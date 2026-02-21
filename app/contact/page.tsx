@@ -142,8 +142,8 @@ export default function Contact() {
                     </svg>
                     <div>
                       <p className="font-semibold text-black">Email</p>
-                      <a href="mailto:kissmecoco@me.com" className="text-amber-600 hover:text-amber-700">
-                        kissmecoco@me.com
+                      <a href="mailto:bulqass@yahoo.com" className="text-amber-600 hover:text-amber-700">
+                        bulqass@yahoo.com
                       </a>
                     </div>
                   </div>
@@ -153,8 +153,8 @@ export default function Contact() {
                     </svg>
                     <div>
                       <p className="font-semibold text-black">Phone</p>
-                      <a href="tel:+15551234567" className="text-amber-600 hover:text-amber-700">
-                        +1 (555) 123-4567
+                      <a href="tel:+16122598411" className="text-amber-600 hover:text-amber-700">
+                        (612) 259-8411
                       </a>
                     </div>
                   </div>
@@ -166,8 +166,8 @@ export default function Contact() {
                     <div>
                       <p className="font-semibold text-black">Address</p>
                       <p className="text-gray-700">
-                        123 Main Street<br />
-                        Minneapolis, MN 55401
+                        2910 Pleasant Ave Fl 1<br />
+                        Minneapolis, MN 55408, US
                       </p>
                     </div>
                   </div>

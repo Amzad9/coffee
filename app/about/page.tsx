@@ -69,6 +69,7 @@ export default function About() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/30 via-transparent to-transparent"></div>
+              {/* Note: Replace /about.png with an image from the postcard link */}
             </div>
           </div>
 
