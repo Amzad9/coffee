@@ -44,7 +44,6 @@ export default function Gallery() {
             </p>
           </div>
 
-          {/* Gallery Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 mb-4 sm:mb-6">
             {galleryImages.map((image) => (
               <div
@@ -63,8 +62,6 @@ export default function Gallery() {
               </div>
             ))}
           </div>
-          
-         
         </div>
       </section>
 
