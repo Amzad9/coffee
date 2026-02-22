@@ -46,7 +46,7 @@ export default function Gallery() {
 
           {/* Gallery Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 mb-4 sm:mb-6">
-            {galleryImages.slice(0, 12).map((image) => (
+            {galleryImages.map((image) => (
               <div
                 key={image.id}
                 className="relative aspect-square overflow-hidden rounded-lg cursor-pointer group hover:scale-105 transition-transform duration-300"
@@ -64,25 +64,7 @@ export default function Gallery() {
             ))}
           </div>
           
-          {/* Last 4 images centered */}
-          <div className="flex justify-center gap-4 sm:gap-6 flex-wrap">
-            {galleryImages.slice(12, 16).map((image) => (
-              <div
-                key={image.id}
-                className="relative aspect-square w-full max-w-[200px] sm:max-w-[250px] lg:max-w-[300px] overflow-hidden rounded-lg cursor-pointer group hover:scale-105 transition-transform duration-300"
-                onClick={() => setSelectedImage(image.id)}
-              >
-                <div className="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 640px) 200px, (max-width: 1024px) 250px, 300px"
-                />
-              </div>
-            ))}
-          </div>
+         
         </div>
       </section>
 
