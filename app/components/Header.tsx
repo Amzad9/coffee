@@ -8,15 +8,15 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed z-50 w-full px-4 sm:px-6 lg:px-8 py-2 sm:py-4 bg-white/80 backdrop-blur-md border-b border-amber-100/50 shadow-sm">
+    <header className="fixed z-50 w-full px-4 sm:px-6 lg:px-8 py-0 sm:py-2 bg-white/80 backdrop-blur-md border-b border-amber-100/50 shadow-sm">
       <nav className="container mx-auto flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
             src="/logo.png"
             alt="Hamdi Coffee Logo"
-            width={200}
+            width={210}
             height={60}
-            className="h-16 sm:h-20 md:h-16 w-auto object-contain"
+            className="h-16 sm:h-20 md:h-18 w-auto object-contain border border-black"
             priority
           />
         </Link>

@@ -2,7 +2,6 @@ import Image from "next/image";
 
 interface Testimonial {
   name: string;
-  source: string;
   quote: string;
   image: string;
 }

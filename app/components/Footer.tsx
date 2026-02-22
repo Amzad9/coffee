@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-linear-to-b relative z-10 from-amber-50 via-amber-50 to-amber-100 py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-12 mb-6 sm:mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 mb-6 sm:mb-8">
           {/* Brand Section */}
           <div>
             <div className="mb-3 sm:mb-4">
@@ -13,7 +13,7 @@ export default function Footer() {
                 alt="Hamdi Coffee Logo"
                 width={200}
                 height={100}
-                className="h-auto w-48 sm:w-56 md:w-64 object-contain"
+                className="h-auto w-48 sm:w-56 md:w-64 object-contain border border-black/5"
               />
             </div>
           </div>
@@ -109,13 +109,34 @@ export default function Footer() {
                 <a href="#" className="hover:text-amber-700 transition-colors duration-300">@hamdicoffee</a>
               </li>
             </ul>
+            
+            {/* Newsletter */}
+            <div className="mt-6 sm:mt-8">
+              <h4 className="font-bold text-black mb-3 sm:mb-4 text-sm sm:text-base">Newsletter sign up</h4>
+              <div className="flex gap-2">
+                <input
+                  type="email"
+                  placeholder="Sign up..."
+                  className="flex-1 px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg border border-gray-300 bg-white text-gray-800 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
+                />
+                <button className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 text-white flex items-center justify-center hover:from-amber-600 hover:to-amber-700 transition-all duration-300 shadow-lg">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="sm:w-4 sm:h-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <polyline points="12 5 19 12 12 19" />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
 
           {/* Hours */}
           <div>
             <h4 className="font-bold text-black mb-3 sm:mb-4 text-sm sm:text-base">Hours</h4>
             <ul className="space-y-1.5 sm:space-y-2 text-gray-800 text-xs sm:text-sm">
-          
+              <li className="flex justify-between">
+                <span className="font-semibold text-black">Today:</span>
+                <span>6:30 am - 10:30 pm</span>
+              </li>
               <li className="flex justify-between">
                 <span className="font-semibold text-black">Sunday:</span>
                 <span>6:30 am - 11:00 pm</span>
@@ -145,24 +166,6 @@ export default function Footer() {
                 <span>6:30 am - 11:00 pm</span>
               </li>
             </ul>
-          </div>
-
-          {/* Newsletter */}
-          <div>
-            <h4 className="font-bold text-black mb-3 sm:mb-4 text-sm sm:text-base">Newsletter sign up</h4>
-            <div className="flex gap-2">
-              <input
-                type="email"
-                placeholder="Sign up..."
-                className="flex-1 px-3 sm:px-4 py-2 sm:py-2.5 rounded-lg border border-gray-300 bg-white text-gray-800 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
-              />
-              <button className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 text-white flex items-center justify-center hover:from-amber-600 hover:to-amber-700 transition-all duration-300 shadow-lg">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="sm:w-4 sm:h-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                  <polyline points="12 5 19 12 12 19" />
-                </svg>
-              </button>
-            </div>
           </div>
         </div>
 

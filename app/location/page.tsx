@@ -42,7 +42,7 @@ export default function Location() {
         </section>
 
         {/* Main Content Section */}
-        <section className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
+        <section className="py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
               
@@ -61,7 +61,7 @@ export default function Location() {
                   </div>
                   
                   {/* Map Container */}
-                  <div className="relative h-[400px] w-full">
+                  <div className="relative h-[360px] w-full">
                     <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2827.720441039585!2d-93.282551684464!3d44.951674479098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f628c123456789%3A0x123456789abcdef!2s2910%20Pleasant%20Ave%20Fl%201%2C%20Minneapolis%2C%20MN%2055408!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus"
                       width="100%"

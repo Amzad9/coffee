@@ -60,7 +60,7 @@ export default function About() {
             </div>
 
             {/* Image */}
-            <div className="relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full min-h-[500px]">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 h-full min-h-[400px]">
               <Image
                 src="/about.png"
                 alt="Hamdi Coffee Interior"

@@ -7,12 +7,12 @@ export default function Reviews() {
     {
       name: "Mohaa Y.",
       source: "Google",
-      text: "There's nothing like a good cup of Hamdi coffee☕ to get you going in the morning.",
+      text: "There's nothing like a good cup of Hamdi coffee to get you going in the morning.",
     },
     {
       name: "Yussuf T.",
       source: "Google",
-      text: "Best Somali tea 🫖 and American coffee ☕️ I really like this place and also enjoy their canbulo,Samusa,cakes and drinks🥰 the Business owners and their Employees are friendly people.",
+      text: "Best Somali tea and American coffee I really like this place and also enjoy their canbulo,Samusa,cakes and drinks the Business owners and their Employees are friendly people.",
     },
     {
       name: "Abdikafi I.",
@@ -32,10 +32,8 @@ export default function Reviews() {
           <p className="text-base sm:text-lg text-gray-700 max-w-2xl mx-auto mb-8">
             See what our customers are saying about us
           </p>
-
         </div>
 
-        {/* Reviews grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {reviews.map((review, index) => (
             <div
