@@ -50,7 +50,6 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
                 </p>
 
                 <p className="text-xs sm:text-sm font-semibold text-black">{t.name}</p>
-                <p className="text-[10px] sm:text-xs text-gray-600 mt-1">{t.source}</p>
               </div>
             );
           })}
