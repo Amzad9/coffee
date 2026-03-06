@@ -2,8 +2,43 @@ import Image from "next/image";
 
 export default function ExoticDelights() {
   return (
-    <section className="bg-linear-to-b from-amber-50 via-amber-50 to-amber-100 py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-linear-to-b from-amber-50 via-amber-50 to-amber-100 py-4 md:py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto md:hidden">
+        <div className="flex items-center justify-between mb-4">
+          <h2 className="text-[1.7rem] font-extrabold text-[#4f2f15] leading-tight">
+            Pastries & Eats
+          </h2>
+          <span className="text-2xl text-[#7b4d25]" aria-hidden="true">
+            &gt;
+          </span>
+        </div>
+
+        <div className="grid grid-cols-3 gap-3">
+          <div className="text-center">
+            <div className="relative mb-2 h-24 rounded-xl overflow-hidden">
+              <Image src="/menu/image (13).png" alt="Cheesecake" fill className="object-cover" />
+            </div>
+            <h3 className="text-sm font-semibold text-[#4f2f15] leading-tight">Cheesecake</h3>
+            <p className="text-sm text-[#6d4728]">$4.00</p>
+          </div>
+          <div className="text-center">
+            <div className="relative mb-2 h-24 rounded-xl overflow-hidden">
+              <Image src="/menu/image (14).png" alt="Ham & Cheese Croissant Sandwich" fill className="object-cover" />
+            </div>
+            <h3 className="text-sm font-semibold text-[#4f2f15] leading-tight">Ham &amp; Cheese</h3>
+            <p className="text-sm text-[#6d4728]">$7.00</p>
+          </div>
+          <div className="text-center">
+            <div className="relative mb-2 h-24 rounded-xl overflow-hidden">
+              <Image src="/menu/image (16).png" alt="Samosa" fill className="object-cover" />
+            </div>
+            <h3 className="text-sm font-semibold text-[#4f2f15] leading-tight">Samosa</h3>
+            <p className="text-sm text-[#6d4728]">$5.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto hidden md:block">
         <h2 className="text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-black text-black uppercase tracking-wide mb-8 sm:mb-12 lg:mb-16">
           REFRESH WITH OUR EXOTIC DELIGHTS
         </h2>

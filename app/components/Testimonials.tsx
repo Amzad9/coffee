@@ -44,11 +44,9 @@ export default function Testimonials({ testimonials }: TestimonialsProps) {
                     </div>
                   </div>
                 </div>
-
                 <p className="text-sm sm:text-base lg:text-lg text-black leading-relaxed max-w-xl font-medium mb-3 sm:mb-4 px-2">
                   "{t.quote}"
                 </p>
-
                 <p className="text-xs sm:text-sm font-semibold text-black">{t.name}</p>
               </div>
             );

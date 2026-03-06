@@ -37,9 +37,14 @@ export default function Home() {
       {/* <Header /> */}
       <Hero />
       <TrustedSection />
+      <div className="md:hidden">
+        <ExoticDelights />
+      </div>
       <VideoSection />
       <Testimonials testimonials={testimonials} />
-      <ExoticDelights />
+      <div className="hidden md:block">
+        <ExoticDelights />
+      </div>
       <Reviews />
       <CTASection />
       {/* <Footer /> */}
